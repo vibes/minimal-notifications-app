@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "583792881250",
+    "project_id": "fir-pushapp-963f6",
+    "storage_bucket": "fir-pushapp-963f6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583792881250:android:2e776fbe4777190414eb3b",
+        "android_client_info": {
+          "package_name": "com.ash.firebasepushapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAx1jEm2tVI9njFBnCgafEapLGmbMrqPPY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
