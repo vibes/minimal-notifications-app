@@ -127,7 +127,7 @@ public class MainActivity extends AppCompatActivity {
                                 String token = task.getResult();
 
                                 String msg = getString(R.string.msg_token_fmt, token);
-                                Log.d(TAG, msg);
+                                Log.d(TAG, "Push Token: " + msg);
                                 Toast.makeText(MainActivity.this, msg, Toast.LENGTH_SHORT).show();
                             }
                         });
