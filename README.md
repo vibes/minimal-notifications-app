@@ -1,20 +1,47 @@
-### Description
-This is a minimal push Notifications App that allows for sending push notifications using Firebase.
+# Firebase Push Notifications App
 
-It can be used for testing how Firebase handles Notifications on the client app
+This is a lightweight application designed to simplify the process of sending push notifications using Firebase services.
 
-### Specific Requirements for building Locally
-#### Local setup
-The project is built with the following
+## Purpose
+
+The main objective of this app is to streamline the testing of Firebase's notification handling mechanisms within client applications. It deliberately excludes the use of the Vibes Push SDK, allowing for a more focused examination of notification functionality directly from the client side.
+
+This decision serves a dual purpose. Firstly, it provides developers with a clearer understanding of Firebase's native notification handling. Secondly, it offers a valuable resource for those seeking to explore notification functionalities without the added complexity of external SDKs.
+
+## Specific Requirements for Building Locally
+
+### Local Setup
+
+To build this project locally, ensure you have the following prerequisites:
+
 - Java 11
 - Android Studio Iguana | 2023.2.1 Patch 1
 - Gradle 8.4
 
-Running the app
-1. Open and run the app through Android Studio
-2. You will need the push token to be able to send notifications, in a separate terminal, run `adb logcat | grep MainActivity`
-3. Hit the `Log token` button on the screen to copy the token from terminal
-4. In postman, make a request to `https://fcm.googleapis.com/v1/projects/fir-pushapp-29fc2/messages:send`
-5. Make sure to set up authorization in postman (When you add the firebase url, postman auto-detects the firebase application and will prompt you to Authorize requests).
-Note that when prompted, you will need to use the Vibes Email to be able to get the Auth token for this app.
-6. You can use a payload similar to what's defined [here](https://firebase.google.com/docs/cloud-messaging/migrate-v1)
+### Running the App
+
+Follow these steps to run the application locally:
+
+1. Open the project in Android Studio and run it.
+2. Retrieve the push token necessary for sending notifications by executing `adb logcat | grep MainActivity` in a separate terminal.
+3. Copy the token from the terminal and use it in the payload to send to Firebase. More on this in the next step.
+4. In Postman, make a POST request to `https://fcm.googleapis.com/v1/projects/fir-pushapp-29fc2/messages:send`.
+5. Configure authorization in Postman. When adding the Firebase URL, Postman automatically detects the Firebase application and prompts you to authorize requests. Note that Vibes Email credentials are required to obtain the Auth token for this app.
+6. Construct your payload according to the guidelines provided [here](https://firebase.google.com/docs/cloud-messaging/migrate-v1).
+
+Example payload: 
+```json
+{
+   "message":{
+      "token":"tokenTJCzShi5HrrMUzZRvM:APA91bHSrqc5XjnleH6Ff1bB-BLXzLfyHkqoqBqpZK0HjFiiIDQ6I6dnWaZS92XvmbgZ0QD8PH6SJTdPXrg",
+      "notification":{
+         "body":"This is an FCM notification message!",
+         "title":"FCM Message"
+      },
+      "data": {
+         "story_id": "story_12345"
+      }
+   }
+}
+```
+By adhering to these steps, you can seamlessly test and explore Firebase push notifications within your application environment.

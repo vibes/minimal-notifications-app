@@ -75,7 +75,6 @@ public class MainActivity extends AppCompatActivity {
         // is used when no click_action is specified.
         //
         // Handle possible data accompanying notification message.
-        // [START handle_data_extras]
         if (getIntent().getExtras() != null) {
             for (String key : getIntent().getExtras().keySet()) {
                 Object value = getIntent().getExtras().get(key);
@@ -95,7 +94,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Log.d(TAG, "Subscribing to weather topic");
-                // [START subscribe_topics]
                 FirebaseMessaging.getInstance().subscribeToTopic("weather")
                         .addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
@@ -141,9 +139,7 @@ public class MainActivity extends AppCompatActivity {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
             if (ContextCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS) ==
                     PackageManager.PERMISSION_GRANTED) {
-                // FCM SDK (and your app) can post notifications.
             } else {
-                // Directly ask for the permission
                 requestPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS);
             }
         }
