@@ -12,7 +12,9 @@ The project is built with the following
 
 Running the app
 1. Open and run the app through Android Studio
-2. You will need the push token to be able to send notifications, in a separate, run `adb logcat | grep MainActivity`
+2. You will need the push token to be able to send notifications, in a separate terminal, run `adb logcat | grep MainActivity`
 3. Hit the `Log token` button on the screen to copy the token from terminal
-4. In postman, make a request to `https://fcm.googleapis.com/v1/projects/fir-pushapp-963f6/messages:send`
-5. You can use a payload similar to what's defined [here](https://firebase.google.com/docs/cloud-messaging/migrate-v1)
+4. In postman, make a request to `https://fcm.googleapis.com/v1/projects/fir-pushapp-29fc2/messages:send`
+5. Make sure to set up authorization in postman (When you add the firebase url, postman auto-detects the firebase application and will prompt you to Authorize requests).
+Note that when prompted, you will need to use the Vibes Email to be able to get the Auth token for this app.
+6. You can use a payload similar to what's defined [here](https://firebase.google.com/docs/cloud-messaging/migrate-v1)

@@ -14,24 +14,24 @@
  * limitations under the License.
  */
 
-package com.ash.firebasepushapp;
+package com.vibes.firebasepushapp;
 
-        import android.app.NotificationChannel;
-        import android.app.NotificationManager;
-        import android.app.PendingIntent;
-        import android.content.Context;
-        import android.content.Intent;
-        import android.media.RingtoneManager;
-        import android.net.Uri;
-        import android.os.Build;
-        import androidx.core.app.NotificationCompat;
-        import android.util.Log;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.media.RingtoneManager;
+import android.net.Uri;
+import android.os.Build;
+import androidx.core.app.NotificationCompat;
+import android.util.Log;
 
-        import com.google.firebase.messaging.FirebaseMessagingService;
-        import com.google.firebase.messaging.RemoteMessage;
+import com.google.firebase.messaging.FirebaseMessagingService;
+import com.google.firebase.messaging.RemoteMessage;
 
-        import androidx.work.OneTimeWorkRequest;
-        import androidx.work.WorkManager;
+import androidx.work.OneTimeWorkRequest;
+import androidx.work.WorkManager;
 
 /**
  * NOTE: There can only be one service in each app that receives FCM messages. If multiple

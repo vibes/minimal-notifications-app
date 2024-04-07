@@ -11,11 +11,11 @@ tasks {
 }
 
 android {
-    namespace = "com.ash.firebasepushapp"
+    namespace = "com.vibes.firebasepushapp"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.ash.firebasepushapp"
+        applicationId = "com.vibes.firebasepushapp"
         minSdk = 19
         targetSdk = 34
         versionCode = 1

@@ -14,8 +14,7 @@
  * limitations under the License.
  */
 
-package com.ash.firebasepushapp;
-
+package com.vibes.firebasepushapp;
 import android.Manifest;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -33,10 +32,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
-import com.ash.firebasepushapp.databinding.ActivityMainBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.messaging.FirebaseMessaging;
+import com.vibes.firebasepushapp.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 

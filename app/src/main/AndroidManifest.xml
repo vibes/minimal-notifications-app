@@ -13,7 +13,7 @@
         android:theme="@style/Theme.AppCompat.Light.NoActionBar"
         tools:targetApi="31">
         <service
-            android:name=".FirebaseService"
+            android:name="com.vibes.firebasepushapp.FirebaseService"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
@@ -22,10 +22,10 @@
         </service>
 
         <activity
-            android:name=".SecondActivity"
+            android:name="com.vibes.firebasepushapp.SecondActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.vibes.firebasepushapp.MainActivity"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>

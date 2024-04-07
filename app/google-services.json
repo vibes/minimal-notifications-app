@@ -1,21 +1,21 @@
 {
   "project_info": {
-    "project_number": "583792881250",
-    "project_id": "fir-pushapp-963f6",
-    "storage_bucket": "fir-pushapp-963f6.appspot.com"
+    "project_number": "728094145992",
+    "project_id": "fir-pushapp-29fc2",
+    "storage_bucket": "fir-pushapp-29fc2.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:583792881250:android:2e776fbe4777190414eb3b",
+        "mobilesdk_app_id": "1:728094145992:android:e4231c403af3ea30f994fd",
         "android_client_info": {
-          "package_name": "com.ash.firebasepushapp"
+          "package_name": "com.vibes.firebasepushapp"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAx1jEm2tVI9njFBnCgafEapLGmbMrqPPY"
+          "current_key": "AIzaSyAVNRni72NrwKzyEH6jp_yoxKnXxKPi6f0"
         }
       ],
       "services": {

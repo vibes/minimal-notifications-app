@@ -5,14 +5,14 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context="com.vibes.firebasepushapp.MainActivity">
 
 
     <Button
         android:id="@+id/log_token"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Log token"
+        android:text="@string/log_token"
         app:layout_constraintBottom_toTopOf="@+id/subscribe_to_topic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +22,7 @@
         android:id="@+id/subscribe_to_topic"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Subscribe to topic"
+        android:text="@string/subscribe_to_topic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +32,7 @@
         android:id="@+id/next_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Next Screen"
+        android:text="@string/next_screen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

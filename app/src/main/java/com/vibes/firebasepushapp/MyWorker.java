@@ -1,4 +1,4 @@
-package com.ash.firebasepushapp;
+package com.vibes.firebasepushapp;
 
 import android.content.Context;
 import android.util.Log;
